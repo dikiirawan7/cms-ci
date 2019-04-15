@@ -32,13 +32,30 @@
       </div>
           
       <!-- Page content -->
-
+      <nav class="navbar fixed-top" >
+        <div class= "pull-right" id="navbarNavDropdown" >
+          <ul class="nav navbar-nav" >
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-menu-right text-right">
+                    <a class="dropdown-item" href="#">Link</a><br>
+                    <a class="dropdown-item" href="#">Link</a><br>
+                    <a class="dropdown-item" href="#">Link</a>
+                </div>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
         <!-- Keep all page content within the page-content inset div! -->
         <div class="page-content inset">
           <div class="row">
               <div class="col-md-12">
               <p class="well lead">An Experiment using the sidebar template from startbootstrap.com which I integrated in my website (<a href="http://animeshmanglik.name">animeshmanglik.name</a>)</p>
-              <p class="well lead">Click on the Menu to Toggle Sidebar . Hope you enjoy it!</p> 
+              <p class="well lead">Click on the Menu to Toggle Sidebar . Hope you enjoy it! 
+              <?php echo $this->session->userdata("username"); ?>
+                <?php echo $this->session->userdata("role"); ?>
+              </p> 
             </div>
           </div>
         </div>
@@ -46,8 +63,7 @@
 </div>
 
 
-<?php echo $this->session->userdata("username"); ?>
-<?php echo $this->session->userdata("role"); ?>
+
 </div>
 <script>
 $("#menu-toggle").click(function(e) {

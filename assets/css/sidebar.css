@@ -1,4 +1,18 @@
-
+.navbar{
+    background-color:#172d67;
+    border-radius:0px;
+    padding:6px 0;
+}
+.navbar .nav-link{
+    color: White;
+}
+.navbar .nav-link:hover{
+    color: #172d67;
+}
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
 .page-content .inset .row{
     margin-left:0px;
     margin-right:0px;
